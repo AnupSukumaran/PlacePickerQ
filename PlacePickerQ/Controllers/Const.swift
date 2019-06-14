@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Const: NSObject {
+public class Const: NSObject {
     
     struct ApiBase {
        
@@ -17,11 +17,8 @@ class Const: NSObject {
         static let APIHost = "maps.googleapis.com"
 
         static let APIPath = "/maps/api"
+
         
-        static let Map_APIKey = "AIzaSyCucBX-zzVBw1bDxoJSj0549KwCP2IUa8o"//Constants.ApiBase.Map_APIKey
-        //AIzaSyCucBX-zzVBw1bDxoJSj0549KwCP2IUa8o
-      //Live Parent IOS Key - AIzaSyBe2gJaEGInNlV4CAzFrzcfle7Ba_2mhRk
-      //AIzaSyC-Wl9jyORB9knOCTWDTxYEBcZE5YeW59c
     }
     
     struct Keys {
@@ -49,6 +46,10 @@ class Const: NSObject {
         //Language keys
         static let en = "en"
         static let ar = "ar"
+    }
+    
+    struct Val {
+        static var Map_APIKey = ""
     }
     
     struct PathExt {
