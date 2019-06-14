@@ -1,42 +1,41 @@
-Pod::Spec.new do |s|
 
-# 1
-s.platform = :ios
-s.ios.deployment_target = '12.0'
-s.name = 'PlacePickerQ'
-s.summary = 'PlacePickerQ Similar to Google PlacePicker.'
-s.requires_arc = true
 
-# 2
-s.version = '1.0.0'
+Pod::Spec.new do |spec|
 
-# 3
-s.license = { :type => 'MIT', :file => 'LICENSE' }
 
-# 4 - Replace with your name and e-mail address
-s.author = { 'Anup Sukumaran' => 'anup.sukumaran9@gmail.com'}
 
-# 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = 'https://AnupSukumaran@bitbucket.org/AnupSukumaran/placepickerq'
+  spec.name         = "PlacePickerQ"
+  spec.version      = "1.0.0"
+  spec.summary      = " PlacePickerQ to pick address from Google maps directly."
 
-# 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => 'https://AnupSukumaran@bitbucket.org/AnupSukumaran/placepickerq.git',
-:tag => '1.0.0' }
 
-# 7
-s.framework = 'UIKit'
-s.dependency 'Alamofire', '~> 4.8.2'
-s.dependency 'GooglePlaces', '~> 3.1.0'
-s.dependency 'GoogleMaps', '~> 3.1.0'
-s.dependency 'SDWebImage/WebP', '~> 4.4.6'
-s.dependency 'NVActivityIndicatorView/AppExtension', '~> 4.7.0'
+#spec.description  = <<-DESC
+#DESC
 
-# 8
-s.source_files = 'PlacePickerQ/**/*.{swift}'
+  spec.homepage     = "https://github.com/AnupSukumaran/PlacePickerQ"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author             = { "Anup Sukumaran" => "anup.sukumaran9@gmail.com" }
 
-# 9
-s.resource_bundles = {'PlacePickerQ' => ['PlacePickerQ/Resources/**/*.{xib,png}']} 
-# 10
-s.swift_version = '5'
+  spec.platform     = :ios
+  spec.ios.deployment_target = "12.0"
+
+  spec.source       = { :git => "https://github.com/AnupSukumaran/PlacePickerQ.git", :tag => "1.0.0" }
+
+  spec.source_files  = "PlacePickerQ", "PlacePickerQ/**/*.{swift}"
+
+  # spec.resource  = "icon.png"
+  # spec.resources = "PlacePickerQ/*.png"
+
+  spec.resources = "PlacePickerQ/**/*.{png,storyboard,xcassets}"
+
+  spec.framework  = "UIKit"
+  spec.requires_arc = true
+
+  spec.dependency "Alamofire", "~> 4.8.2"
+  spec.dependency "GooglePlaces", "~> 3.1.0"
+  spec.dependency "GoogleMaps", "~> 3.1.0"
+  spec.dependency "SDWebImage/WebP", "~> 4.4.7"
+  spec.dependency "NVActivityIndicatorView/AppExtension", "~> 4.7.0"
+
 
 end
