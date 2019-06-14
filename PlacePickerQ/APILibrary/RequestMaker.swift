@@ -17,7 +17,7 @@ class Req: NSObject {
         
         var req = URLRequest(url: url)
         req.httpMethod = "GET"
-        
+        //sd
         return req
     }
 }
