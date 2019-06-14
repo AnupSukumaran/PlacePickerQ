@@ -32,9 +32,9 @@ PODS:
     - libwebp/core
   - libwebp/webp (1.0.2)
   - NVActivityIndicatorView/AppExtension (4.7.0)
-  - SDWebImage/Core (4.4.6)
-  - SDWebImage/WebP (4.4.6):
-    - libwebp (>= 0.5)
+  - SDWebImage/Core (4.4.7)
+  - SDWebImage/WebP (4.4.7):
+    - libwebp (< 2.0, >= 0.5)
     - SDWebImage/Core
 
 DEPENDENCIES:
@@ -59,7 +59,7 @@ SPEC CHECKSUMS:
   GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
   libwebp: b068a3bd7c45f7460f6715be7bed1a18fd5d6b48
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
 
 PODFILE CHECKSUM: bcc52f89add8607e4ffa7eae0ff2e6e9bdf6324e
 
