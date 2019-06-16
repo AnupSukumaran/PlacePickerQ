@@ -36,6 +36,7 @@ Pod::Spec.new do |spec|
   spec.dependency "GoogleMaps", "~> 3.1.0"
   spec.dependency "SDWebImage/WebP", "~> 4.4.7"
   spec.dependency "NVActivityIndicatorView/AppExtension", "~> 4.7.0"
-
+  spec.static_framework = true
+  spec.swift_version = '5.0'
 
 end

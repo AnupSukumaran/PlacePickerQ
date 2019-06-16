@@ -118,7 +118,7 @@ extension UIViewController {
     
     //MARK:
     func getDeviceType() {
-        let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
+        _ = UIScreen.main.traitCollection.userInterfaceIdiom
     }
     
     //MARK:
