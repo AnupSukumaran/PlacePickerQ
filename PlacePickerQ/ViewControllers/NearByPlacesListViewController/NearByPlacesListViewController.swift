@@ -22,7 +22,7 @@ class NearByPlacesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         iconImg.image = #imageLiteral(resourceName: "iconDefault")
-        
+        iconView.layer.cornerRadius = 10
         if GVars.FROM_AUTOCOMP, let address = GVars.ADDRESS {
             top_Address_LB.text = address
             GVars.FROM_AUTOCOMP = false

@@ -21,7 +21,7 @@ class NearbyPlacesTableViewCell: UITableViewCell {
         placeNameLB.text = nearbyPlacesModel.name ?? "-"
         addressLB.text = nearbyPlacesModel.vicinity ?? "-"
         SetImg().fromUrl(iconImg, nearbyPlacesModel.icon ?? "-", nil)
-        
+        iconView.layer.cornerRadius = 10
     }
     
     override func awakeFromNib() {

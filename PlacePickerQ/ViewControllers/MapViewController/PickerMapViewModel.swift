@@ -18,7 +18,7 @@ public protocol PickerMapViewModelDelegate: class {
 public class PickerMapViewModel: NSObject {
     
     weak var delegate: PickerMapViewModelDelegate?
-    weak var mainView_Delegate: PickerMapViewModelDelegate?
+    weak public var mainView_Delegate: PickerMapViewModelDelegate?
     let locationManager = CLLocationManager()
 
     var nearbyPlacesModels = [NearbyPlacesModel]()
