@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Anup Sukumaran" => "anup.sukumaran9@gmail.com" }
 
   spec.platform     = :ios
-  spec.ios.deployment_target = "12.0"
+  spec.ios.deployment_target = "10.0"
 
   spec.source       = { :git => "https://github.com/AnupSukumaran/PlacePickerQ.git", :tag => "1.7.0" }
 
