@@ -10,12 +10,12 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-protocol PickerMapViewModelDelegate: class {
+public protocol PickerMapViewModelDelegate: class {
     func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer)
     func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D)
 }
 
-class PickerMapViewModel: NSObject {
+public class PickerMapViewModel: NSObject {
     
     weak var delegate: PickerMapViewModelDelegate?
     weak var mainView_Delegate: PickerMapViewModelDelegate?
@@ -77,7 +77,7 @@ class PickerMapViewModel: NSObject {
     func callingAPI(_ current_Lat: String, _ current_Long: String, _ mapView: GMSMapView, _ main: UIViewController, _ pinVerticalCenter_Constrain: NSLayoutConstraint, _ coord: CLLocationCoordinate2D ) {
         let latAndLong = "\(current_Lat), \(current_Long)"
         
-        APILibrary.shared.get_Nearby_Places_API(loc: latAndLong, radius: "500", googleApiKey: Const.Val.Map_APIKey) { (response) in
+        APILibrary.shared.get_Nearby_Places_API(loc: latAndLong, radius: "500", googleApiKey: PlacePickerQ_API.key) { (response) in
             switch response {
             case .Success(let data):
                 self.nearbyPlacesModels = data.nearbyPlacesModels

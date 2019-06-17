@@ -10,7 +10,6 @@ import UIKit
 
 class NearByPlacesListViewController: UIViewController {
     
-    
     @IBOutlet weak var top_Address_LB: UILabel!
     @IBOutlet weak var locationList: UITableView!
     @IBOutlet weak var top_Address_btn: UIButton!

@@ -9,13 +9,13 @@
 import UIKit
 import GoogleMaps
 
-class MapViewController: UIViewController {
+public class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var pinVerticalCenter_Constrain: NSLayoutConstraint!
     @IBOutlet weak var pinImg: UIImageView!
     
-    var funcs = PickerMapViewModel()
+  public var funcs = PickerMapViewModel()
     let kMapStyle = "[" +
         "  {" +
         "    \"featureType\": \"poi.business\"," +
@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
         "  }," +
     "]"
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         funcs.delegate = self
         mapView.settings.rotateGestures = false

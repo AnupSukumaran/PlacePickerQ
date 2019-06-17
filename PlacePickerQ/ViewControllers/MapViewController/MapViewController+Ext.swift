@@ -14,7 +14,7 @@ import GooglePlaces
 
 extension MapViewController: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
         guard status == .authorizedWhenInUse else {return}
         funcs.locationManager.startUpdatingLocation()
@@ -23,7 +23,7 @@ extension MapViewController: CLLocationManagerDelegate {
     }
     
     // 6
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         guard let location = locations.first else {return}
         funcs.current_Lat = "\(location.coordinate.latitude)"
@@ -42,21 +42,21 @@ extension MapViewController: CLLocationManagerDelegate {
 
 extension MapViewController: GMSMapViewDelegate {
     
-    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+    public func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
         
         mapView.clear()
         funcs.calledOnce = false
         funcs.slide_ChildView_Down(self, mapView)
     }
     
-    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+    public func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         
         funcs.callingAPI(funcs.current_Lat, funcs.current_Long, mapView, self, pinVerticalCenter_Constrain, position.target)
         
     }
     
-    func mapView(_ mapView: GMSMapView, didTap overlay: GMSOverlay) {}
-    func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {}
+    public func mapView(_ mapView: GMSMapView, didTap overlay: GMSOverlay) {}
+    public func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {}
 }
 
 
@@ -67,9 +67,9 @@ extension MapViewController: UIGestureRecognizerDelegate {}
 //MARK:-----------***MapViewModelDelegate***-----------//
 
 extension MapViewController: PickerMapViewModelDelegate {
-    func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {}
+    public func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {}
     
-    func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
+    public func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
         funcs.gestureAction(recognizer, self)
     }
     
@@ -88,7 +88,7 @@ extension MapViewController: NearByPlacesViewModelDelegate {
 //MARK:-----------***GMSAutocompleteViewControllerDelegate***-----------//
 
 extension MapViewController: GMSAutocompleteViewControllerDelegate {
-    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+    public func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         let placeAddress = place.formattedAddress ?? "-"
         GVars.ADDRESS = placeAddress
         GVars.FROM_AUTOCOMP = true
@@ -100,9 +100,9 @@ extension MapViewController: GMSAutocompleteViewControllerDelegate {
 
     }
     
-    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {}
+    public func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {}
     
-    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+    public func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         dismiss(animated: true, completion: nil)
     }
     

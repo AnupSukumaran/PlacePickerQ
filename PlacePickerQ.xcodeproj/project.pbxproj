@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E77E28E22B78CFD007B549E /* PlacePickerQ_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77E28D22B78CFD007B549E /* PlacePickerQ_API.swift */; };
 		0E7B2CB522B35FE600753573 /* ModelClassResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CB422B35FE600753573 /* ModelClassResponse.swift */; };
 		0E7B2CB722B3614A00753573 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CB622B3614A00753573 /* TypeAliases.swift */; };
 		0E7B2CB922B3620800753573 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CB822B3620700753573 /* Logger.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		07AB3F399FD63D3925E211E1 /* Pods-PlacePickerQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlacePickerQ.release.xcconfig"; path = "Target Support Files/Pods-PlacePickerQ/Pods-PlacePickerQ.release.xcconfig"; sourceTree = "<group>"; };
+		0E77E28D22B78CFD007B549E /* PlacePickerQ_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePickerQ_API.swift; sourceTree = "<group>"; };
 		0E7B2CB422B35FE600753573 /* ModelClassResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelClassResponse.swift; sourceTree = "<group>"; };
 		0E7B2CB622B3614A00753573 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		0E7B2CB822B3620700753573 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				0EFA6DBA22B286B300D10D4E /* Const.swift */,
 				0EFA6DBB22B286B300D10D4E /* SetImg.swift */,
 				0EFA6DBC22B286B300D10D4E /* Picker_PlaceMarker.swift */,
+				0E77E28D22B78CFD007B549E /* PlacePickerQ_API.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				0E7B2CB722B3614A00753573 /* TypeAliases.swift in Sources */,
 				0EFA6DC822B286B300D10D4E /* PickerMapViewModel.swift in Sources */,
 				0E7B2CB922B3620800753573 /* Logger.swift in Sources */,
+				0E77E28E22B78CFD007B549E /* PlacePickerQ_API.swift in Sources */,
 				0E7B2CCE22B364C600753573 /* L012Localizer.swift in Sources */,
 				0E7B2CCF22B364C600753573 /* L102Language.swift in Sources */,
 				0EFA6DC522B286B300D10D4E /* NearbyPlacesTableViewCell.swift in Sources */,

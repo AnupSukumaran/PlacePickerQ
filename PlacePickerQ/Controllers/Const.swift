@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Const: NSObject {
+ class Const: NSObject {
     
     struct ApiBase {
        
@@ -48,10 +48,10 @@ public class Const: NSObject {
         static let ar = "ar"
     }
     
-    struct Val {
-        static var Map_APIKey = ""
-    }
-    
+//    struct Val {
+//        static var Map_APIKey = ""
+//    }
+//
     struct PathExt {
         static let place_nearbysearch_json = "/place/nearbysearch/json"
     }
