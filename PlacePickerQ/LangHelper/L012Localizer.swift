@@ -204,8 +204,8 @@ func disableMethodSwizzling() {
 
 /// Exchange the implementation of two methods of the same Class
 func MethodSwizzleGivenClassName(cls: AnyClass, originalSelector: Selector, overrideSelector: Selector) {
-    guard let origMethod: Method = class_getInstanceMethod(cls, originalSelector) else {print("origMethod😩");return}
-    guard let overrideMethod: Method = class_getInstanceMethod(cls, overrideSelector) else {print("overrideMethod😩");return}
+    guard let origMethod: Method = class_getInstanceMethod(cls, originalSelector) else {Logger.pnt("origMethod😩");return}
+    guard let overrideMethod: Method = class_getInstanceMethod(cls, overrideSelector) else {Logger.pnt("origMethod😩");return}
     
     if (class_addMethod(cls, originalSelector, method_getImplementation(overrideMethod), method_getTypeEncoding(overrideMethod))) {
         class_replaceMethod(cls, overrideSelector, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));

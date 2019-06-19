@@ -44,5 +44,5 @@ extension UIDevice {
         }
     }
     
-    //MARK: Use program as - > print("screenType:", UIDevice.current.screenType)
+    
 }

@@ -198,14 +198,12 @@ public class PickerMapViewModel: NSObject {
         
         switch recognizer.state {
         case .began:
-            print("began")
+            break
             
         case .changed:
-            print("changed")
             changed(recognizer, main)
             
         case .ended:
-             print("ended")
             ended(recognizer, main)
             
         default:

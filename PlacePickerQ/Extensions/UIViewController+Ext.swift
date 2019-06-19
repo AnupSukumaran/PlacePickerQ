@@ -128,23 +128,23 @@ extension UIViewController {
             
         case .pad:
             // self.sideMenuWidth = 500
-            print("iPad style UI")
+            Logger.pnt("iPad style UI")
             return pad
             // self.sideMenuWidth = 400
             
         case .phone:
             // frame.size.width = self.sideMenuWidth
-            print("iPhone and iPod touch style UI")
+            Logger.pnt(("iPhone and iPod touch style UI")
             return phone
             
         case .tv:
             //  frame.size.width = self.sideMenuWidth
-            print("tvOS style UI")
+            Logger.pnt(("tvOS style UI")
             return 0
             
         default:
             // frame.size.width = self.sideMenuWidth
-            print("Unspecified UI idiom")
+            Logger.pnt(("Unspecified UI idiom")
             return 0
             
         }

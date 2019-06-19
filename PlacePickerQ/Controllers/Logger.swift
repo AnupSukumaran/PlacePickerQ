@@ -10,7 +10,7 @@ import os.log
 
 class Logger {
     
-    static let showPrintValue = true
+    static let showPrintValue = false
     
     enum types: String {
         case info =  "LOG"
