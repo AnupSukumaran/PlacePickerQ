@@ -15,7 +15,6 @@ extension UIApplication {
     }
 }
 
-
 class L102Localizer: NSObject {
     class func DoTheMagic() {
         
