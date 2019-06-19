@@ -134,17 +134,17 @@ extension UIViewController {
             
         case .phone:
             // frame.size.width = self.sideMenuWidth
-            Logger.pnt(("iPhone and iPod touch style UI")
+            Logger.pnt("iPhone and iPod touch style UI")
             return phone
             
         case .tv:
             //  frame.size.width = self.sideMenuWidth
-            Logger.pnt(("tvOS style UI")
+            Logger.pnt("tvOS style UI")
             return 0
             
         default:
             // frame.size.width = self.sideMenuWidth
-            Logger.pnt(("Unspecified UI idiom")
+            Logger.pnt("Unspecified UI idiom")
             return 0
             
         }
