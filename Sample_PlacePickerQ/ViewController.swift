@@ -11,18 +11,16 @@ import PlacePickerQ
 import GoogleMaps
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
+    @IBOutlet weak var addressLable: UILabel!
+    
 
     @IBAction func pickerAction(_ sender: Any) {
-        callingPickerVC(self)
+        pickerVC(self)
     }
     
-    //MARK: @@@PlacePicker
-    func callingPickerVC(_ main: UIViewController) {
+    
+    func pickerVC(_ main: UIViewController) {
         
         guard let vc = UIStoryboard.mapViewController() else {return}
         
@@ -40,7 +38,7 @@ extension ViewController: PickerMapViewModelDelegate {
     }
     
     func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {
-        
+        addressLable.text = address
     }
     
     
