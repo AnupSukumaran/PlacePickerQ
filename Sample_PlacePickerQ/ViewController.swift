@@ -32,9 +32,14 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: PickerMapViewModelDelegate {
+    func didCancelSelections() {
+        
+    }
+    
+  
     
     
-    
+
     func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
         
     }
