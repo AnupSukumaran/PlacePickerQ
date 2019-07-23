@@ -67,6 +67,10 @@ extension MapViewController: UIGestureRecognizerDelegate {}
 //MARK:-----------***MapViewModelDelegate***-----------//
 
 extension MapViewController: PickerMapViewModelDelegate {
+    public func didCancelSelection() {
+        
+    }
+    
     public func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {}
     
     public func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
