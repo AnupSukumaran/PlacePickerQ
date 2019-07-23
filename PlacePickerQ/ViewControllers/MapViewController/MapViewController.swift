@@ -43,6 +43,7 @@ public class MapViewController: UIViewController {
     @IBAction func backBtn(_ sender: UIBarButtonItem) {
         funcs.mainView_Delegate?.didCancelSelection()
         dismiss(animated: true, completion: nil)
+        funcs.mainView_Delegate?.didCancelSelections()
     }
     
 

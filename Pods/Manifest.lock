@@ -48,9 +48,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - NVActivityIndicatorView/AppExtension
-  - PlacePickerQ
   - SDWebImage/WebP
-  - SDWebImage/WebP (~> 4.4.7)
 
 SPEC REPOS:
   https://github.com/AnupSukumaran/PPPodSpecs.git:
