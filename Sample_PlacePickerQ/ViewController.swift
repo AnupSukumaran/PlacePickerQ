@@ -33,6 +33,8 @@ class ViewController: UIViewController {
 
 extension ViewController: PickerMapViewModelDelegate {
     
+    
+    
     func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
         
     }
