@@ -11,6 +11,7 @@ import GoogleMaps
 import GooglePlaces
 
 public protocol PickerMapViewModelDelegate: class {
+    func didCancelSelections()
     func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer)
     func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D)
 }

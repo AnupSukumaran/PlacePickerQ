@@ -240,8 +240,8 @@
 		0EFA6DB222B286B300D10D4E /* MapViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0EFA6DB322B286B300D10D4E /* MapViewController+Ext.swift */,
 				0EFA6DB422B286B300D10D4E /* MapViewController.swift */,
+				0EFA6DB322B286B300D10D4E /* MapViewController+Ext.swift */,
 				0EFA6DB522B286B300D10D4E /* PickerMapViewModel.swift */,
 			);
 			path = MapViewController;
@@ -324,8 +324,6 @@
 				0E18D9E922BA2D6A00690926 /* Sources */,
 				0E18D9EA22BA2D6A00690926 /* Frameworks */,
 				0E18D9EB22BA2D6A00690926 /* Resources */,
-				4AD0DB2AB28685BBFE6304E0 /* [CP] Embed Pods Frameworks */,
-				13F3096F48E466E14FD3593D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,40 +466,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13F3096F48E466E14FD3593D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AD0DB2AB28685BBFE6304E0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5D6A8737B172B484C3BE0751 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
