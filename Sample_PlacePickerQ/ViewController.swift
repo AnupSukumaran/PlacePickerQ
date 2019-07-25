@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import PlacePickerQ
-import GoogleMaps
+//import PlacePickerQ
+//import GoogleMaps
 
 class ViewController: UIViewController {
     
@@ -16,37 +16,33 @@ class ViewController: UIViewController {
     
 
     @IBAction func pickerAction(_ sender: Any) {
-        pickerVC(self)
+      //  pickerVC(self)
     }
     
     
-    func pickerVC(_ main: UIViewController) {
-        
-        guard let vc = UIStoryboard.mapViewController() else {return}
-        
-        vc.funcs.mainView_Delegate = main as? PickerMapViewModelDelegate
-        let nav = UINavigationController.init(rootViewController: vc)
-        main.present(nav, animated: true, completion: nil)
-    }
+//    func pickerVC(_ main: UIViewController) {
+//
+//        guard let vc = UIStoryboard.mapViewController() else {return}
+//
+//        vc.funcs.mainView_Delegate = main as? PickerMapViewModelDelegate
+//        let nav = UINavigationController.init(rootViewController: vc)
+//        main.present(nav, animated: true, completion: nil)
+//    }
     
 }
 
-extension ViewController: PickerMapViewModelDelegate {
-    func didCancelSelections() {
-        
-    }
-    
-  
-    
-    
-
-    func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
-        
-    }
-    
-    func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {
-        addressLable.text = address
-    }
-    
-    
-}
+//extension ViewController: PickerMapViewModelDelegate {
+//    func didCancelSelection() {
+//
+//    }
+//
+//    func pan_gesture_Action(_ recognizer: UIPanGestureRecognizer) {
+//
+//    }
+//
+//    func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D) {
+//        addressLable.text = address
+//    }
+//
+//
+//}
