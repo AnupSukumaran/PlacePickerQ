@@ -9,13 +9,20 @@
 import UIKit
 import GoogleMaps
 
+public protocol MapViewControllerDelegate: class {
+    func didCancelSelection()
+    func send_Selected_Text_MapView(_ address: String, _ coord: CLLocationCoordinate2D)
+}
+
 public class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var pinVerticalCenter_Constrain: NSLayoutConstraint!
     @IBOutlet weak var pinImg: UIImageView!
     
-  public var funcs = PickerMapViewModel()
+    public weak var delegate: MapViewControllerDelegate?
+    public var funcs = PickerMapViewModel()
+    
     let kMapStyle = "[" +
         "  {" +
         "    \"featureType\": \"poi.business\"," +
@@ -41,9 +48,9 @@ public class MapViewController: UIViewController {
     }
     
     @IBAction func backBtn(_ sender: UIBarButtonItem) {
-        funcs.mainView_Delegate?.didCancelSelection()
+        delegate?.didCancelSelection()
         dismiss(animated: true, completion: nil)
-        funcs.mainView_Delegate?.didCancelSelection()
+        
     }
     
 
