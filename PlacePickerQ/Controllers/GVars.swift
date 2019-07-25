@@ -17,8 +17,6 @@ class GVars {
     static var HASINTERNET = false
     static var STUD_VIEW_SHOWED = false
     static var FCM_TOKEN = ""
-//    static var countryModel = [CountryModel]()
-//    static var studentsModel = [StudentsModel]()
     static var oldLoc: CLLocationCoordinate2D?
     static var oldBearing: CLLocationDegrees?
     static var NOTIFIC_STATUS: Int?
@@ -44,40 +42,7 @@ class GVars {
     static var isArabic: Bool {
         return L102Language.currentAppleLanguage() == Const.Keys.ar ? true : false
     }
-    
-    
-    
-//    static var PARENT_NAME: String? {
-//        
-//        return userDef.value(forKey: Constants.Keys.parentName) as? String
-//    }
-//    var userPhoneNum: String? {
-//        return userDef.value(forKey: Constants.Keys.userPhoneNum) as? String
-//    }
-//
-//    var newPARENT_NAME: String? {
-//
-//        return userDef.value(forKey: Constants.Keys.parentName) as? String
-//    }
-//
-//    static var authID: String? {
-//        return userDef.value(forKey: Constants.Keys.authID) as? String
-//    }
-    
-//    static var parent_id: String? {
-//        return userDef.value(forKey: Constants.Keys.parent_id) as? String
-//    }
-    
-//    var parent_id: String? {
-//        return userDef.value(forKey: Constants.Keys.parent_id) as? String
-//    }
-//
-//    static var is_in_NightMode: Bool {
-//        return userDef.bool(forKey: Constants.Keys.themeKey)
-//    }
-    
-   
-    
+
     //MARK: Func to set Not Data View
     fileprivate static func toSetNotDataView(_ dataEmpty: Bool, _ view: UIView) {
         switch dataEmpty {
@@ -88,31 +53,6 @@ class GVars {
             NoDataView.remove(view)
         }
     }
-    
-//    static func dataState(_ main: UIViewController) {
-//        
-////        if let vc = main as? NotificationViewController {
-////            let data = vc.funcs.getNotificationListModel
-////            toSetNotDataView(data.isEmpty, vc.notificationListView)
-////        }
-////
-////        if let vc = main as? DateLineViewController {
-////            let data = vc.tFuncs.timeLineModels
-////            toSetNotDataView(data.isEmpty, vc.baseView)
-////        }
-////
-////        if let vc = main as? NewTimeLineViewController {
-////
-////            let data = vc.funcs.timeLineModels
-////            toSetNotDataView(data.isEmpty, vc.view)
-////        }
-////
-////        if let vc = main as? HomeViewController {
-////            let data = vc.funcs.studentsModel
-////            toSetNotDataView(data.isEmpty, vc.wardListView)
-////        }
-//        
-//    }
-    
+
     
 }

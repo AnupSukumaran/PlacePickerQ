@@ -221,9 +221,9 @@
 		0EFA6DAC22B286B300D10D4E /* NearByPlacesListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0EFA6DAF22B286B300D10D4E /* NearByPlacesListViewController.swift */,
 				0EFA6DAD22B286B300D10D4E /* NearByPlacesListViewController+Ext.swift */,
 				0EFA6DAE22B286B300D10D4E /* NearByPlacesViewModel.swift */,
-				0EFA6DAF22B286B300D10D4E /* NearByPlacesListViewController.swift */,
 				0EFA6DB022B286B300D10D4E /* NearbyPlacesTableViewCell */,
 			);
 			path = NearByPlacesListViewController;

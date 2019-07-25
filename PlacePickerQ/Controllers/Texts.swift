@@ -12,14 +12,6 @@ class Texts: NSObject {
     
     static let gvar = GVars()
     
-    //HomePage
-//    static let yourWard = "Your Ward"
-//    let greeting = "\(Greet.logic_V2())"
-//    
-//    //HomePage - Arabic
-//    static let arb_yourWard = "وارد الخاص بك"
-//    let arbgreeting = "\(Greet.logic_V2())"
-//    
     //LoginPage
     static let loginCap =  "Enter your mobile number registered on your children's school"
     static let notRegTitle = "Not Registered? Contact School"
@@ -29,18 +21,6 @@ class Texts: NSObject {
     static let arb_loginCap =  "أدخل رقم هاتفك المحمول المسجل في مدرسة أطفالك"
     static let arb_notRegTitle = "غير مسجل؟ اتصل بالمدرسة"
     static let arb_signIn = "تسجيل الدخول"
-    
-//    //OTP Page
-//    static let welcomeTxt = "Hello"
-//    static let otpCap = "We have sent an OTP on your Mobile Number"
-//    static let resendTitle = "Resend OTP"
-//    static let verify = "Verify"
-//
-//    //OTP Page - Arabic
-//    static let arb_welcomeTxt = "مرحبا \(gvar.newPARENT_NAME ?? "")!"
-//    static let arb_otpCap = "لقد أرسلنا OTP على رقم هاتفك المحمول"
-//    static let arb_resendTitle = "إعادة إرسال"
-//    static let arb_verify = "التحقق"
     
     //SetboardingPoint
     static let pickUpPoint = "Pick Up Point"

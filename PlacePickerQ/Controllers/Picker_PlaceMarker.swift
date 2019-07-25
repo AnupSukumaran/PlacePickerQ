@@ -31,8 +31,6 @@ import GoogleMaps
 
 class Picker_PlaceMarker: GMSMarker {
     
-
-    
     init(location: CLLocationCoordinate2D, markerImg: UIImage,mapView: GMSMapView) {
         
         super.init()

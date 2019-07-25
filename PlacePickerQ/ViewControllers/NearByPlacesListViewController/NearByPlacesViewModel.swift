@@ -15,7 +15,7 @@ protocol  NearByPlacesViewModelDelegate: class {
 
 class NearByPlacesViewModel: NSObject {
     
-    weak var delegate: NearByPlacesViewModelDelegate?
+    public weak var delegate: NearByPlacesViewModelDelegate?
     var nearbyPlacesModels = [NearbyPlacesModel]()
     var coord: CLLocationCoordinate2D?
     

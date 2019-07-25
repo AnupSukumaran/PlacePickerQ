@@ -16,8 +16,6 @@ class NoDataView: NSObject {
         assignTitles()
         if main.viewWithTag(50) == nil {
             let noDataView = UIView.init(frame: main.bounds)
-//            let noDataView = UIView(frame: CGRect(x: 0, y: 0, width: main.bounds.width, height: main.bounds.height))
-            //UIView.init(frame: main.bounds)
             noDataView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             noDataView.tag = 50
             let imageView = UIImageView()

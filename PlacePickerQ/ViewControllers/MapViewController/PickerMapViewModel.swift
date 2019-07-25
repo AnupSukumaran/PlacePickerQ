@@ -18,8 +18,8 @@ public protocol PickerMapViewModelDelegate: class {
 
 public class PickerMapViewModel: NSObject {
     
-    weak var delegate: PickerMapViewModelDelegate?
-    weak public var mainView_Delegate: PickerMapViewModelDelegate?
+    public weak var delegate: PickerMapViewModelDelegate?
+    public weak var mainView_Delegate: PickerMapViewModelDelegate?
     let locationManager = CLLocationManager()
 
     var nearbyPlacesModels = [NearbyPlacesModel]()
@@ -129,22 +129,6 @@ public class PickerMapViewModel: NSObject {
         }
     }
     
-//    func reverseGeocodeCoordinate(_ coordinate: CLLocationCoordinate2D, _ locLabel: UILabel, _ mapView: GMSMapView, _ view: UIView, _ pinVerticalCenter_Constrain: NSLayoutConstraint) {
-//        let geocoder = GMSGeocoder()
-//
-//        geocoder.reverseGeocodeCoordinate(coordinate) { (response, error) in
-//            guard let address = response?.firstResult(), let lines = address.lines else {return}
-//            locLabel.text = lines.joined(separator: "\n")
-//            let labelHeight = locLabel.intrinsicContentSize.height
-//            mapView.padding = UIEdgeInsets(top: view.safeAreaInsets.top, left: 0,
-//                                           bottom: labelHeight, right: 0)
-//
-//            UIView.animate(withDuration: 0.25) {
-//                pinVerticalCenter_Constrain.constant = ((labelHeight - view.safeAreaInsets.top) * 0.5)
-//                view.layoutIfNeeded()
-//            }
-//        }
-//    }
     
     //MARK:
     func addingCenterChildView(_ main: UIViewController, _ mapView: GMSMapView, _ pinVerticalCenter_Constrain: NSLayoutConstraint, _ coord: CLLocationCoordinate2D) {
