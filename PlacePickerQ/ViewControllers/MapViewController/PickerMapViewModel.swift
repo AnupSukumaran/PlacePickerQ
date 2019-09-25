@@ -69,6 +69,7 @@ public class PickerMapViewModel: NSObject {
         guard let vc = UIStoryboard.nearByPlacesListViewController() else {return}
         vc.funcs.nearbyPlacesModels = nearbyPlacesModels
         let nav = UINavigationController.init(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
         main.present(nav, animated: true, completion: nil)
     }
     
@@ -250,6 +251,7 @@ public class PickerMapViewModel: NSObject {
     func autoCompView(_ main: UIViewController) {
         let acController = GMSAutocompleteViewController()
         acController.delegate = main as? GMSAutocompleteViewControllerDelegate
+        acController.modalPresentationStyle = .fullScreen
         main.present(acController, animated: true, completion: nil)
     }
     

@@ -21,12 +21,17 @@
 		0E7B2CC022B362D300753573 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CBF22B362D300753573 /* UIViewController+Ext.swift */; };
 		0E7B2CC222B3636100753573 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC122B3636100753573 /* UIDevice+Ext.swift */; };
 		0E7B2CC422B3642200753573 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC322B3642200753573 /* NoDataView.swift */; };
-		0E7B2CC622B3648400753573 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC522B3648400753573 /* UIStoryboard+Ext.swift */; };
 		0E7B2CCC22B364C600753573 /* MirrorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC822B364C600753573 /* MirrorImage.swift */; };
 		0E7B2CCD22B364C600753573 /* MirroringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC922B364C600753573 /* MirroringViewController.swift */; };
 		0E7B2CCE22B364C600753573 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CCA22B364C600753573 /* L012Localizer.swift */; };
 		0E7B2CCF22B364C600753573 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CCB22B364C600753573 /* L102Language.swift */; };
 		0E7B2CD122B3661900753573 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CD022B3661900753573 /* Texts.swift */; };
+		0EDA55F1233B675700453FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18D9F122BA2D6A00690926 /* ViewController.swift */; };
+		0EDA55F2233B689D00453FC2 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC522B3648400753573 /* UIStoryboard+Ext.swift */; };
+		0EDA55F4233B68E200453FC2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB422B286B300D10D4E /* MapViewController.swift */; };
+		0EDA55F5233B691800453FC2 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC522B3648400753573 /* UIStoryboard+Ext.swift */; };
+		0EDA55F6233B692D00453FC2 /* MapViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB322B286B300D10D4E /* MapViewController+Ext.swift */; };
+		0EDA55F7233B69C800453FC2 /* PlacePickerQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFA6D8E22B27F6300D10D4E /* PlacePickerQ.framework */; };
 		0EFA6D9322B27F6300D10D4E /* PlacePickerQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFA6D9122B27F6300D10D4E /* PlacePickerQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EFA6DBD22B286B300D10D4E /* PlacePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA6DA422B286B300D10D4E /* PlacePicker.storyboard */; };
 		0EFA6DBE22B286B300D10D4E /* APILibrary+Ext3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DA722B286B300D10D4E /* APILibrary+Ext3.swift */; };
@@ -37,7 +42,6 @@
 		0EFA6DC422B286B300D10D4E /* NearByPlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DAF22B286B300D10D4E /* NearByPlacesListViewController.swift */; };
 		0EFA6DC522B286B300D10D4E /* NearbyPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB122B286B300D10D4E /* NearbyPlacesTableViewCell.swift */; };
 		0EFA6DC622B286B300D10D4E /* MapViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB322B286B300D10D4E /* MapViewController+Ext.swift */; };
-		0EFA6DC722B286B300D10D4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB422B286B300D10D4E /* MapViewController.swift */; };
 		0EFA6DC822B286B300D10D4E /* PickerMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB522B286B300D10D4E /* PickerMapViewModel.swift */; };
 		0EFA6DC922B286B300D10D4E /* LocModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB722B286B300D10D4E /* LocModel.swift */; };
 		0EFA6DCA22B286B300D10D4E /* NearbyPlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB822B286B300D10D4E /* NearbyPlacesModel.swift */; };
@@ -105,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDA55F7233B69C800453FC2 /* PlacePickerQ.framework in Frameworks */,
 				9273147630B042F0CEA8D3B8 /* Pods_Sample_PlacePickerQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +541,8 @@
 			files = (
 				0E18D9F222BA2D6A00690926 /* ViewController.swift in Sources */,
 				0E18D9F022BA2D6A00690926 /* AppDelegate.swift in Sources */,
+				0EDA55F2233B689D00453FC2 /* UIStoryboard+Ext.swift in Sources */,
+				0EDA55F6233B692D00453FC2 /* MapViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,18 +554,20 @@
 				0EFA6DBE22B286B300D10D4E /* APILibrary+Ext3.swift in Sources */,
 				0E7B2CC022B362D300753573 /* UIViewController+Ext.swift in Sources */,
 				0EFA6DC422B286B300D10D4E /* NearByPlacesListViewController.swift in Sources */,
-				0EFA6DC722B286B300D10D4E /* MapViewController.swift in Sources */,
 				0EFA6DC222B286B300D10D4E /* NearByPlacesListViewController+Ext.swift in Sources */,
 				0E7B2CBD22B3626D00753573 /* GVars.swift in Sources */,
 				0EFA6DCA22B286B300D10D4E /* NearbyPlacesModel.swift in Sources */,
 				0E7B2CBB22B3624300753573 /* Results.swift in Sources */,
+				0EDA55F1233B675700453FC2 /* ViewController.swift in Sources */,
 				0EFA6DC322B286B300D10D4E /* NearByPlacesViewModel.swift in Sources */,
 				0EFA6DCD22B286B300D10D4E /* Picker_PlaceMarker.swift in Sources */,
 				0EFA6DC122B286B300D10D4E /* RequestMaker.swift in Sources */,
 				0E7B2CCD22B364C600753573 /* MirroringViewController.swift in Sources */,
+				0EDA55F4233B68E200453FC2 /* MapViewController.swift in Sources */,
 				0EFA6DC622B286B300D10D4E /* MapViewController+Ext.swift in Sources */,
 				0E7B2CC422B3642200753573 /* NoDataView.swift in Sources */,
 				0EFA6DC922B286B300D10D4E /* LocModel.swift in Sources */,
+				0EDA55F5233B691800453FC2 /* UIStoryboard+Ext.swift in Sources */,
 				0E7B2CD122B3661900753573 /* Texts.swift in Sources */,
 				0E7B2CB722B3614A00753573 /* TypeAliases.swift in Sources */,
 				0EFA6DC822B286B300D10D4E /* PickerMapViewModel.swift in Sources */,
@@ -568,7 +577,6 @@
 				0E7B2CCF22B364C600753573 /* L102Language.swift in Sources */,
 				0EFA6DC522B286B300D10D4E /* NearbyPlacesTableViewCell.swift in Sources */,
 				0EFA6DC022B286B300D10D4E /* URLFormater_Picker.swift in Sources */,
-				0E7B2CC622B3648400753573 /* UIStoryboard+Ext.swift in Sources */,
 				0E7B2CC222B3636100753573 /* UIDevice+Ext.swift in Sources */,
 				0E7B2CCC22B364C600753573 /* MirrorImage.swift in Sources */,
 				0EFA6DCB22B286B300D10D4E /* Const.swift in Sources */,
@@ -781,7 +789,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PlacePickerQ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -790,8 +798,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = QaptiveTech.PlacePickerQ;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -808,7 +817,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PlacePickerQ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -817,8 +826,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = QaptiveTech.PlacePickerQ;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
