@@ -26,12 +26,10 @@
 		0E7B2CCE22B364C600753573 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CCA22B364C600753573 /* L012Localizer.swift */; };
 		0E7B2CCF22B364C600753573 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CCB22B364C600753573 /* L102Language.swift */; };
 		0E7B2CD122B3661900753573 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CD022B3661900753573 /* Texts.swift */; };
-		0EDA55F1233B675700453FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18D9F122BA2D6A00690926 /* ViewController.swift */; };
-		0EDA55F2233B689D00453FC2 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC522B3648400753573 /* UIStoryboard+Ext.swift */; };
 		0EDA55F4233B68E200453FC2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB422B286B300D10D4E /* MapViewController.swift */; };
 		0EDA55F5233B691800453FC2 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B2CC522B3648400753573 /* UIStoryboard+Ext.swift */; };
-		0EDA55F6233B692D00453FC2 /* MapViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DB322B286B300D10D4E /* MapViewController+Ext.swift */; };
 		0EDA55F7233B69C800453FC2 /* PlacePickerQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFA6D8E22B27F6300D10D4E /* PlacePickerQ.framework */; };
+		0EDA5604233B73D900453FC2 /* libPods-PlacePickerQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EDA5603233B73D900453FC2 /* libPods-PlacePickerQ.a */; };
 		0EFA6D9322B27F6300D10D4E /* PlacePickerQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFA6D9122B27F6300D10D4E /* PlacePickerQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EFA6DBD22B286B300D10D4E /* PlacePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA6DA422B286B300D10D4E /* PlacePicker.storyboard */; };
 		0EFA6DBE22B286B300D10D4E /* APILibrary+Ext3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DA722B286B300D10D4E /* APILibrary+Ext3.swift */; };
@@ -50,7 +48,6 @@
 		0EFA6DCD22B286B300D10D4E /* Picker_PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA6DBC22B286B300D10D4E /* Picker_PlaceMarker.swift */; };
 		0EFA6DD022B286D000D10D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA6DCF22B286D000D10D4E /* Assets.xcassets */; };
 		9273147630B042F0CEA8D3B8 /* Pods_Sample_PlacePickerQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E3051894B14F3DC3529554 /* Pods_Sample_PlacePickerQ.framework */; };
-		BDE3B8F3F479BF61C560C681 /* libPods-PlacePickerQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39475E9F3F55DCDDEF7C7246 /* libPods-PlacePickerQ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +74,9 @@
 		0E7B2CCA22B364C600753573 /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
 		0E7B2CCB22B364C600753573 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		0E7B2CD022B3661900753573 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		0EDA55F8233B6FE000453FC2 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDA55FA233B702700453FC2 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDA5603233B73D900453FC2 /* libPods-PlacePickerQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-PlacePickerQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFA6D8E22B27F6300D10D4E /* PlacePickerQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlacePickerQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFA6D9122B27F6300D10D4E /* PlacePickerQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacePickerQ.h; sourceTree = "<group>"; };
 		0EFA6D9222B27F6300D10D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE3B8F3F479BF61C560C681 /* libPods-PlacePickerQ.a in Frameworks */,
+				0EDA5604233B73D900453FC2 /* libPods-PlacePickerQ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +290,9 @@
 		19690E6999D5B800C4A4246A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EDA5603233B73D900453FC2 /* libPods-PlacePickerQ.a */,
+				0EDA55FA233B702700453FC2 /* libAlamofire.a */,
+				0EDA55F8233B6FE000453FC2 /* libAlamofire.a */,
 				39475E9F3F55DCDDEF7C7246 /* libPods-PlacePickerQ.a */,
 				D6E3051894B14F3DC3529554 /* Pods_Sample_PlacePickerQ.framework */,
 			);
@@ -329,6 +332,8 @@
 				0E18D9E922BA2D6A00690926 /* Sources */,
 				0E18D9EA22BA2D6A00690926 /* Frameworks */,
 				0E18D9EB22BA2D6A00690926 /* Resources */,
+				4EA6CAD28C4A9F079BA0DEC0 /* [CP] Embed Pods Frameworks */,
+				96A9EB1BCBA34EA597F7B935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,7 +371,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Qaptive Technologies";
 				TargetAttributes = {
 					0E18D9EC22BA2D6A00690926 = {
@@ -471,6 +476,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4EA6CAD28C4A9F079BA0DEC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D6A8737B172B484C3BE0751 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +513,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A9EB1BCBA34EA597F7B935 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample_PlacePickerQ/Pods-Sample_PlacePickerQ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC4692F5B45C228B3BECD63F /* [CP] Copy Pods Resources */ = {
@@ -541,8 +580,6 @@
 			files = (
 				0E18D9F222BA2D6A00690926 /* ViewController.swift in Sources */,
 				0E18D9F022BA2D6A00690926 /* AppDelegate.swift in Sources */,
-				0EDA55F2233B689D00453FC2 /* UIStoryboard+Ext.swift in Sources */,
-				0EDA55F6233B692D00453FC2 /* MapViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +595,6 @@
 				0E7B2CBD22B3626D00753573 /* GVars.swift in Sources */,
 				0EFA6DCA22B286B300D10D4E /* NearbyPlacesModel.swift in Sources */,
 				0E7B2CBB22B3624300753573 /* Results.swift in Sources */,
-				0EDA55F1233B675700453FC2 /* ViewController.swift in Sources */,
 				0EFA6DC322B286B300D10D4E /* NearByPlacesViewModel.swift in Sources */,
 				0EFA6DCD22B286B300D10D4E /* Picker_PlaceMarker.swift in Sources */,
 				0EFA6DC122B286B300D10D4E /* RequestMaker.swift in Sources */,
@@ -622,7 +658,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P3J8AFD59;
 				INFOPLIST_FILE = Sample_PlacePickerQ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +666,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "QaptiveTech.Sample-PlacePickerQ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -642,7 +678,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P3J8AFD59;
 				INFOPLIST_FILE = Sample_PlacePickerQ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,7 +686,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "QaptiveTech.Sample-PlacePickerQ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -658,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -706,7 +743,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -722,6 +759,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -764,7 +802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

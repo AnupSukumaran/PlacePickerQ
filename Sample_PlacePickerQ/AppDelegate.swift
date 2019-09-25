@@ -7,21 +7,21 @@
 //
 
 import UIKit
-//import GoogleMaps
-//import GooglePlaces
-//import PlacePickerQ
+import GoogleMaps
+import GooglePlaces
+import PlacePickerQ
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleApiKey = "ENTER YOUR API KEY HERE."
+    let googleApiKey = "AIzaSyCucBX-zzVBw1bDxoJSj0549KwCP2IUa8o"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-//        GMSServices.provideAPIKey(googleApiKey)
-//        GMSPlacesClient.provideAPIKey(googleApiKey)
-//        PlacePickerQ_API.key = googleApiKey
+       //  Override point for customization after application launch.
+        GMSServices.provideAPIKey(googleApiKey)
+        GMSPlacesClient.provideAPIKey(googleApiKey)
+        PlacePickerQ_API.key = googleApiKey
         return true
     }
 

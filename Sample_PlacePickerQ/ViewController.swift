@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//import PlacePickerQ
-//import GoogleMaps
+import PlacePickerQ
+import GoogleMaps
 
 class ViewController: UIViewController {
     
@@ -24,14 +24,16 @@ class ViewController: UIViewController {
 
         guard let vc = UIStoryboard.mapViewController() else {return}
 
-        vc.funcs.mainView_Delegate = main as? PickerMapViewModelDelegate
+        vc.funcs.delegate = main as? PickerMapViewModelDelegate
         let nav = UINavigationController.init(rootViewController: vc)
+        nav.modalPresentationStyle  = .fullScreen
         main.present(nav, animated: true, completion: nil)
     }
     
 }
 
 extension ViewController: PickerMapViewModelDelegate {
+    
     func didCancelSelection() {
 
     }

@@ -37,7 +37,7 @@ public class MapViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         funcs.delegate = self
         mapView.settings.rotateGestures = false
         funcs.set_Delegates(self, mapView)
