@@ -15,7 +15,7 @@ import PlacePickerQ
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleApiKey = "AIzaSyCucBX-zzVBw1bDxoJSj0549KwCP2IUa8o"
+    let googleApiKey = "Enter You Map Key"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        //  Override point for customization after application launch.
