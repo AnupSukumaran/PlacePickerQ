@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/AnupSukumaran/PPPodSpecs.git'
+source 'https://github.com/AnupSukumaran/PickerPodSpecs.git'
 
 target 'PlacePickerQ' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks

@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "PlacePickerQ"
-  spec.version      = "2.7.9"
+  spec.version      = "2.8.0"
   spec.summary      = " PlacePickerQ to pick address from Google maps directly."
 
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
 
-  spec.source       = { :git => "https://github.com/AnupSukumaran/PlacePickerQ.git", :tag => "2.7.9" }
+  spec.source       = { :git => "https://github.com/AnupSukumaran/PlacePickerQ.git", :tag => "2.8.0" }
 
   spec.source_files  = "PlacePickerQ", "PlacePickerQ/**/*.{swift}"
 
